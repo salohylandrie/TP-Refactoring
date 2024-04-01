@@ -8,23 +8,16 @@ public class Femme extends Humain {
 	    
 	    public Femme() {
 	       
-	        this.nom = "";
-	        this.prenom = "";
-	        this.age = 0;
+	    	super("", "", 0);
 	    }
 	    
 	    public Femme(String nom, String prenom, int age) {
-	        this.nom = nom;
-	        this.prenom = prenom;
-	        this.age = age;
+	    	super(nom, prenom, age);
 	    }
 	    
 	    public static void main(String[] args) {
-	        Femme femme= new Femme();
-	       femme.nom = "Rasoa";
-	       femme.prenom = "Jeanne";
-	        femme.age = 50;
-	       femme.toString(); 
+	    	Femme femme = new Femme("Rasoa", "Jeanne", 50); 
+	        System.out.println(femme.toString()); 
 	    }
 	    
 	    @Override

@@ -5,25 +5,18 @@ public class Homme extends Humain {
 	
 	    
 	    public Homme() {
-	        // Initialise les champs avec des valeurs par défaut
-	        this.nom = "";
-	        this.prenom = "";
-	        this.age = 0;
+	    	 super("", "", 0);
 	    }
 	    
 	    public Homme(String nom, String prenom, int age) {
-	        this.nom = nom;
-	        this.prenom = prenom;
-	        this.age = age;
+	        super(nom, prenom, age); 
 	    }
 	    
 	    
+	    
 	    public static void main(String[] args) {
-	        Homme homme = new Homme();
-	        homme.nom = "Rakoto";
-	        homme.prenom = "John";
-	        homme.age = 40;
-	        homme.toString(); 
+	        Homme homme = new Homme("Rakoto", "John", 40); 
+	        System.out.println(homme.toString());  
 	    }
 	    
 	    @Override
