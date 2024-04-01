@@ -5,4 +5,9 @@ public class Humain {
 	    protected String prenom;
 	    protected int age;
 	  
+	    
+
+	    public void manger() {
+	        System.out.println("L'humain mange.");
+	  }
 }
