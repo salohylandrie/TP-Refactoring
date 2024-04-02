@@ -21,9 +21,10 @@ public class Humain implements Consommation{
 	        if (ami != null && !amis.contains(ami)) {
 	            amis.add(ami);
 	            System.out.println(this.nom + " est maintenant ami avec " + ami.getNom());
-	            ami.amiDe(this); // Indiquer que l'autre humain est aussi ami avec celui-ci
+	            ami.amiDe(this); 
 	        }
 	    }
+	    
 	    
 	    
 	    private void amiDe(Humain ami) {
